@@ -72,7 +72,6 @@ def main():
     print_board(board)
 
     while True:
-        # Human move
         row = int(input("Enter row (0-2): "))
         col = int(input("Enter col (0-2): "))
         if board[row][col] != ' ':
@@ -86,7 +85,6 @@ def main():
             print(f"Game Over! {result} wins!" if result != "Tie" else "It's a tie!")
             break
 
-        # AI move
         ai_move(board)
         print("AI's move:")
         print_board(board)
